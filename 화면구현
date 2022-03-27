@@ -1,0 +1,60 @@
+“html” 
+
+기본용어
+
+요소 : 내용을 포함한 태그 전체 <h1 id= “title” > Hello_HTML </h1>
+
+태그 : HTML 문서의 문법적인 표시를 위해 사용되는 이름표 
+
+속성 : 태그에 추가적인 정보를 부여할 때 사용 
+id = “title”   id > 속성 이름  // title > 속성 값
+
+HTML 태그의 종류 
+
+블록 태그  >> 항상 새 라인에서 출력, 한 라인 독점 사용 
+<div>, <table>, <form>, <p>, <ul>, <ol>, <h1~6>, <hr>
+
+인라인 태그 >> 표시 되는 만큼 영역 차지 
+<img>, <span>, <input>, <button>, <textarea>, <label>
+
+
+주의 사항
+태그와 속성 대소문자 구분X 
+속성 값에 필요 없는 공백X 
+특수기호                    >>  Db에 저장될 때 특수 기호 치환되어 저장
+  <       &lt;      
+  >       &gt; 
+  “         &quot;
+공백    &nbsp;
+ 
+html의 경
+절대 경로 >> 시스템 위치 
+상대 경로 >>  현재 있는 폴더가 기준 ../ 으로 현재 경로부터 찾아감
+
+html – position (위치)
+
+절대 POSITION
+1. fixed(말 그대로 고정)
+2. absolute (가까운 부모 요소 기준) 위치 좌표 설정.
+- (static이 아닌) 첫 번째 부모 요소 있으면 부모 요소 기준
+- 부모 요소 없는 경우 브라우저 기준
+- top, right, bottom, left 속성 가능.
+
+상대 POSITION
+1.static  >> (기본 값)상,하에 요소 위치 시킴,  ⬆⬇⬅➡ 속성 값에 영향 받지 않음 (위치 조정 불가능)
+2.relative >> (가까운 인접 요소 기준) ⬆⬇⬅➡ 속성 지정 가능 
+
+html – float (배치) >> 레이아웃 용으로 사용, ⬅➡속성 지정 시 display 무시 
+
+html - display(정렬)
+block >> 항상 새 라인에서 시작
+inline >> 한 줄로 정렬 (공간 부족 시 다음 라인, width, height 조절 불가)
+inline-block >> (공간 부족 시 다음 라인) width, height, margin 조절 가능 
+none >> 영역을 없애 화면에 나타나지 않게함
+
+우선순위 
+display:none  >> position: absolute /fixed  >>  position: relative >> display:(none제외)
+
+
+
+
