@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    
+    <h3>과제</h3><hr> 
+    <span id = "span_1"style="font-size: 100px; background-color: aquamarine;"></span>
+    <script>
+        let count = 100;
+        let counter = setInterval(timer, 100);
+        
+        function timer(){
+            count--;
+            if(count <= 30){
+                clearInterval(counter);
+        
+                document.getElementById("span_1").innerHTML=count;
+                return;
+            }
+            document.getElementById("span_1").innerHTML=count;
+        }
+        
+        span_1.onclick = function (e) {
+            //(마우스 클릭시) 타이머 해제. 문자열 회전 중단 
+            clearInterval(counter); 
+        }
+        
+        
+        
+        
+            </script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <script>
+        const fi = 3.141592653;
+        function fn_circle() {
+            let input = prompt('원의 반지름을 입력해주세요', '반지름');
+            input = Number(input);
+            sum =((input*2) *fi);
+            console.log(sum);
+            sum = sum.toFixed(2);
+            console.log(sum);
+
+            document.getElementById("div_1").textContent = sum;
+        }
+
+    </script>
+    <style
+         
+
+    ></style>
+</head>
+
+<body>
+    <button id="sum둘레" onclick="JavaScript:fn_circle()">둘레구하기</button>
+    <div id="div_1"></div>
+</body>
+</html>

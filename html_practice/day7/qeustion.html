@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h3>03/30 과제, 클릭하면 정지</h3>
+  <hr>
+  <div >
+      <span id="span_1" style=" background-color: aquamarine; font-size: 100px;">
+        </span>
+  </div>
+    <script>
+       
+//    let span_1 = document.getElementById("span_1").textContent;
+    let span_1 = document.getElementById("span_1")
+    
+    let timerID = setInterval("minus()", 100);
+    
+    let count = 100;
+
+    // let util = setInterval(function () {
+        //    for(let i = 1; i < 100; i++){
+            //        if(i<100){
+                //            let count = count -1;
+                
+                    //        }
+                    //    }
+                    // }, 100);
+
+
+                    // 100 
+                    function minus() {
+                        //let str = parseInt(span_1) ;   // 정수화
+                        
+                        //str --;
+                        count--;
+                        //span_1.textContent = span_1 ;
+                        span_1.textContent = count;
+                        
+                        span_1 = str;
+                        
+                        console.log(span_1)
+
+
+                        
+
+                        if (span_1 === 30) {
+                            clearInterval(timerID);
+                        }
+
+                    }
+
+
+    // let str = span_1.textContent;
+    // let firstChar = str.substr(0, 1);
+    // let remains = str.substr(1, str.length - 1);
+    // str = remains + firstChar;
+    // span_1.textContent = str; 
+
+
+        // var interval = setInterval(function () {
+            
+        //     if (count === 30 {
+        //         clearInterval(interval);
+        //     }
+        // }, 10);
+
+            span_1.onclick = function (e) {
+                
+                clearInterval(timerID);
+            }
+          
+    </script>
+</body>
+</html>

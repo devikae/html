@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>day4_Quesition</title>
+    <style>
+        * {
+            margin: 0 auto;
+            /* 마진 0 오토로 잡음 */
+        }
+
+        #wrap {
+            width: 1000px;
+        }
+
+        .header {
+            width: 1000px;
+            height: 100px;
+            background-color: lightblue;
+        }
+
+        .side {
+            width: 150px;
+            height: 650px;
+            background-color: lightsalmon;
+        }
+
+        .contents {
+            width: 450px;
+            height: 650px;
+            background-color: rgb(57, 189, 145);
+            float: left;
+        }
+
+        .side {
+            float: left;
+        }
+
+        #m0{
+            width: 400px;
+            height: 650px;
+            background-color: lightslategray;
+            float: right;
+        }
+        .m1{
+            width: 200px;
+            height: 200px;
+            background-color: cornflowerblue;
+        }
+        .m2{
+            width: 200px;
+            height: 200px;
+            background-color: lightcoral;
+        }
+        .footer {
+            clear: both;
+            width: 1000px;
+            height: 100px;
+            background-color: lightseagreen;
+        }
+        .m1{
+            margin: 50px 25px 75px;
+        }
+        .m2{
+            margin: 150px 175px 75px;
+        }
+       #box0 {
+             clear: both;
+            width: 1000px;
+            height: 200px;
+            background-color: lightgoldenrodyellow
+            
+        }
+        .box1 {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            float: left;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            float: left;
+        }
+
+        .box3 {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            float: left;
+        }
+        #box0 {
+            display: flex;
+        }
+
+        .box1 {
+            flex-grow: 0.15
+                /* flex-grow: 1 은 하위 요소들 끼리 균등 분할 */
+        }
+
+        .box2 {
+            flex-grow: 0.15
+                /* flex-grow: 1 은 하위 요소들 끼리 균등 분할 */
+        }
+
+        .box3 {
+            flex-grow: 0.15
+                /* flex-grow: 1 은 하위 요소들 끼리 균등 분할 */
+        }
+        .box1{
+            margin-top: 50px;
+        }
+        .box2{
+            margin-top: 50px;
+        }
+        .box3{
+            margin-top: 50px;
+        }
+         */
+    </style>
+</head> 
+
+<body>
+    <div id="wrap">
+        <div class="header">header</div>
+        <div class="side">side</div>
+        <div class="contents"> contents </div>
+        <div id="m0">
+            <div class="m1">1</div>
+            <div class="m2">2</div>
+        </div>
+    </div>
+    <div id="box0">
+        <div class="box1">3</div>
+        <div class="box2">4</div>
+        <div class="box3">5</div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+
+</html>

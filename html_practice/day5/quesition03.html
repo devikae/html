@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function fn_prompt() {
+    const fi =3.141592653 ;
+    // 프롬프트 다이얼로그 ( 사용자 입력 )
+    let ret = prompt("반지름을 입력하세요", " ");
+    if(ret == null) { 
+      // 취소 버튼을 누른 경우
+      alert("취소하셨습니다.");
+    }
+    else if(ret == "") {
+      alert("입력값이 없습니다.");
+    }
+    else {
+      ret = (ret *2 * fi).toFixed(2);
+      document.getElementById("div_1").textContent = ret;
+    }
+  }
+    </script>
+</head>
+<body>
+<input type="button" onclick="javascript:fn_prompt()" value="원의 둘레"> 
+<div id="div_1">  
+</div>
+
+</body>
+</html>

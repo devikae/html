@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./jquery.js"></script> 
+    <!-- url 복사해서 jquery.js라는 파일을 만들어 불러옴 -->
+    <!-- 인터넷이 안되면 사용할 수 없음 -->
+    <script>
+        function fn_jquery(){
+            var p_tag_text = $("#p_tag").text();
+            // 변수 선언    문서에서 id값이 p_tag를 가져온다 .text > p_tag안에 있는 text를 가져온다  >> var p_tag_text라는 변수 안에 그 값을 담는다
+            alert("p_tag_text:::" + p_tag_text)
+        }
+    </script>
+</head>
+<body>
+    hello world
+    <input type="button" onclick="javascript:fn_jquery()" value="제이쿼리">
+    
+    <p id="p_tag">hello world jQuery</p>
+</body>
+</html>

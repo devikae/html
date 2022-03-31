@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<script>
+ function fn_01(){
+        let fn01 = document.getElementById("p_01");
+        fn01.style.color = "RED";
+        console.log(fn01.textContent)
+ }
+
+ function fn_02(){
+        let input02 = document.getElementById("input_02");
+        input02.style.color = "BLUE";
+        console.log(input02.value)
+ }
+ 
+ function fn_03(){ //class속성 값이 p_03인 요소의 글자색을 orange로 변경하고
+                // for문을 사용하여 textContent를  콘솔에 출력하세요
+        let p_03 = document.getElementsByClassName("p_03");
+        
+        for(let i = 0; i< p_03.length; i++){
+            p_03[i].style.color = "ORANGE";
+            console.log(p_03[i].textContent);
+        }
+} 
+
+ function fn_04(){ //name속성 값이 input_04인 요소의 글자색을 green로 변경하고 value를 콘솔에 출력하세요
+    let input04 = document.getElementsByName("input_04");
+    input04[0].style.color ="GREEN";
+    console.log(input04[0].value)
+}
+ 
+ function fn_05(){ // li 태그를 선택하여 글자색을 yellow로 변경하고 textContent를 콘솔에 출력하세요"
+     let li01 = document.getElementsByTagName("li")
+
+    for(let i = 0; i< li01.length; i++){
+     li01[i].style.color = "YELLOW";
+     console.log(li01[i].textContent);
+    }
+
+     }
+ 
+ 
+ function fn_06(){ //class속성 값이 p_06인 요소의 글자색을 purple로 변경하고
+                //   for문을 사용하여 textContent를 콘솔에 출력하세요
+     let p_06 = document.querySelectorAll(".p_06");
+
+     for (let i = 0; i < p_06.length; i++) {
+         p_06[i].style.color = "VIOLET";
+         console.log(p_06[i].textContent);
+     }
+
+
+
+ }
+</script>
+</head>
+<body>
+
+    <p id="p_01">화면구현_01</p>
+    <input type="text" id="input_02" value="화면구현_02"/>
+    <p class="p_03">화면구현_03_01</p>
+    <p class="p_03">화면구현_03_02</p>
+    <input type="text" name="input_04"  value="화면구현_04"/><br><br>
+    <ul>
+        <li>화면구현_05_01</li>
+        <li>화면구현_05_02</li>
+        <li>화면구현_05_03</li>
+    </ul>
+
+    <p class="p_06">화면구현_06_01</p>
+    <p class="p_06">화면구현_06_02</p>
+    <p class="p_06">화면구현_06_03</p>
+    <p class="p_06">화면구현_06_04</p>    
+   
+
+    <input type="button" onclick="fn_01()"
+        value="(getElementById를 사용하여) id속성 값이 p_01인 요소의 글자색을 red로 변경하고 textContent를 콘솔에 출력하세요" />
+    <br><br>
+
+    <input type="button" onclick="fn_02()"
+        value="(querySelector를 사용하여) id속성 값이 input_02인 요소의 글자색을 blue로 변경하고 value를 콘솔에 출력하세요" />
+    <br><br>
+
+    <input type="button" onclick="fn_03()"
+        value="(getElementsByClassName을 사용하여) class속성 값이 p_03인 요소의 글자색을 orange로 변경하고 for문을 사용하여 textContent를  콘솔에 출력하세요" />
+    <br><br>
+
+    <input type="button" onclick="fn_04()"
+        value="(getElementsByName을 사용하여) name속성 값이 input_04인 요소의 글자색을 green로 변경하고 value를 콘솔에 출력하세요" />
+    <br><br>
+
+    <input type="button" onclick="fn_05()"
+        value="(getElementsByTagName을 사용하여)li 태그를 선택하여 글자색을 yellow로 변경하고 textContent를 콘솔에 출력하세요" />
+    <br><br>
+
+    <input type="button" onclick="fn_06()"
+        value="(querySelectorAll을 사용하여) class속성 값이 p_06인 요소의 글자색을 purple로 변경하고 for문을 사용하여 textContent를 콘솔에 출력하세요" />
+    <br><br>
+
+   
+ 
+</body>
+</html>
