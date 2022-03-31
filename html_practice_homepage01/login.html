@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./imges/nextit_log.jpg">
+    <link rel="stylesheet" type="text/css" href="./css/login.css">
+    <script>
+
+    window.onload = function(){
+        let mem_id_tag = document.getElementById("mem_id");
+        let mem_pw_tag = document.getElementById("mem_pw");
+
+        // 로그인 실패할 때 빨간 텍스트 바꿔주는 함수 
+        mem_id_tag.onclick=function(){
+            document.querySelector(".login_form label[for='mem_id']")
+            .classList.remove("warning");
+        }
+
+        mem_pw_tag.onclick=function(){
+            document.querySelector(".login_form label[for='mem_pw']")
+            .classList.remove("warning");
+        }
+    }
+
+        function login(){
+            // alert("login")
+
+            let mem_id = document.getElementById("mem_id").value;
+            let mem_pw = document.getElementById("mem_pw").value;
+            // 콘솔로 잘 취득했는지 확인
+            console.log("mem_id", mem_id);
+            console.log("mem_pw", mem_pw);
+
+            let label_mem_id = document.querySelector(".login_form label[for='mem_id']")
+            let label_mem_pw = document.querySelector(".login_form label[for='mem_pw']")
+            //  괄호 안에 큰 따옴표 사용해서 for 이하 작성 시 작은 따옴표
+            console.log("label_mem_id",label_mem_id);
+            console.log("label_mem_pw",label_mem_pw);
+
+            if (mem_id === null || mem_id === undefined || mem_id === "") {
+                label_mem_id.classList.add("warning");
+                alert("아이디를 입력하지 않았습니다.")
+            }
+
+            else if (mem_pw === null || mem_pw === undefined || mem_pw === "") {
+                label_mem_pw.classList.add("warning");
+                alert("비밀번호를 입력하지 않았습니다.")
+            }
+
+            else{
+                alert("완료")
+                // let lf = document.loginForm;
+                // lf.submit();
+                // 전송 할 때 이렇게 사용 
+            }
+
+        }
+            
+        
+    </script>
+</head>
+<body>
+    <div class="login_form">
+        <h1>Next It</h1>
+        <form name="loginForm" action="">
+        <div class = "int-area">
+            <input type="text" id="mem_id" name="mem_id"value ="" autocomplete="off" required>
+            <!-- autocomplete 는 자동완성기능 on/off 가능  required = 값이 없으면 전송안됨 꼭 필요한 값일 때-->
+            <label for="mem_id">USER ID</label>
+            <!-- label 태그 for에 mem_id 연결 -->
+        </div>
+        <div class = "int-area">
+            <input type="password" id="mem_pw" name="mem_pw" autocomplete="off"required>
+            <label for="mem_pw">PASSWORD</label>
+            <!-- 위와 마찬가지로 이 라벨태그도 인풋태그와 연결 -->
+        </div>
+        <div class = "btn-area">
+            <button type="button" id="btn_id" name="btn_id" onclick="login()">LOG-IN</button>
+
+        </div>
+    </form>
+    <div class="caption">
+        <ul class="caption_ul" >
+            <li>
+                <a href="#" onclick="join()">JOIN</a>
+            </li>
+            <li>
+                <a href="#" onclick="forgetPw()">FORGOT PASSWORD</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</body>
+</html>
