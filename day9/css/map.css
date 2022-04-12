@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0;
+    color:black;
+    
+}
+
+#header{
+    display: flex;
+    width: 1280px;
+    position: relative;
+    
+}
+
+.nav{
+    display: flex;
+    position: absolute;
+    left: 1050px;    
+}
+
+.nav a{
+    margin-left: 50px;
+    font-family: 'Lalezar', cursive;
+}
+
+.searchArea{
+    position: relative;
+    left: 300px;
+    top: 33px;
+}
+
+.logoArea{
+    position: relative;
+    right: 330px;
+    top: 10px;
+}
+.logoArea > a{
+    font-family: 'Lalezar', cursive;
+}
+.logoArea{
+    font-size: 50px;
+}
+
+.logoArea > .nav{
+    font-size: 30px;
+    position: relative;
+    right: 500px;
+
+}
+
+.textsearch{
+    font-family: 'Lalezar', cursive;
+}
+
+.searchArea > .search > input{
+    font-family: 'Lalezar', cursive;
+}
+
+
+.searchArea{
+    height: 50px;
+}
+
+.nav ul li{
+    display: none;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.nav ul:hover li{
+    animation: fade-in .5s;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.map{
+    display: flex;
+    margin-top: 150px ;
+    width: 80%;
+}
+
+.text{
+    width: 700px;
+    height: 500px;
+}
+
+.paint >h2{
+    margin-bottom: 50px;
+}

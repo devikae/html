@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 0;
+    color:black;
+    
+}
+
+#header{
+    display: flex;
+    width: 1280px;
+    position: relative;
+    
+}
+
+.nav{
+    display: flex;
+    position: absolute;
+    left: 1050px;    
+}
+
+.nav a{
+    margin-left: 50px;
+    font-family: 'Lalezar', cursive;
+}
+
+.searchArea{
+    position: relative;
+    left: 300px;
+    top: 33px;
+}
+
+.logoArea{
+    position: relative;
+    right: 330px;
+    top: 10px;
+}
+.logoArea > a{
+    font-family: 'Lalezar', cursive;
+}
+.logoArea{
+    font-size: 50px;
+}
+
+.logoArea > .nav{
+    font-size: 30px;
+    position: relative;
+    right: 500px;
+
+}
+
+.textsearch{
+    font-family: 'Lalezar', cursive;
+}
+
+.searchArea > .search > input{
+    font-family: 'Lalezar', cursive;
+}
+
+
+.searchArea{
+    height: 50px;
+}
+
+.nav ul li{
+    display: none;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.nav ul:hover li{
+    animation: fade-in .5s;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.map{
+    display: flex;
+    margin-top: 150px ;
+    width: 80%;
+}
+
+.text{
+    width: 700px;
+    height: 500px;
+}
+
+.paint >h2{
+    margin-bottom: 50px;
+}
+
+.intro_bg{
+    width: 100%;
+    height: 700px;
+    background-color: sienna;
+}
+.intro_text{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 300px;
+}
+.intro_text > h1, .intro_text > h4 {
+    color: #fff;
+}
+.intro_bg{
+    background-image: url("../images/img102.jpg");
+    background-size: 100% 700px;
+}
+
+/* =========================2차 intro_bg e */
+/* 전체영역잡기 */
+.contents{
+    width: 100%;
+    height: 700px;
+    background-color: lightslategrey;
+}
+/* 사용할 영역잡기 */
+.content01{
+    width: 1280px;
+    height: 700px;
+    background-color: lightgreen;
+}
+.content01_h1{
+    width: 100%;
+    height: 100px;
+    background-color: lightpink;
+    text-align: center;
+}
+.content01_h1 > h1{
+    padding-top: 30px;
+}
+/* 테이블 영역잡기 */
+#div_table{
+    width: 1280px;
+    height: 500px;
+    background-color: lightsalmon;
+}
+ 
+/* list */
+#div_table > table{
+    width: 80%;
+    height: 500px;
+    background-color: lightskyblue;
+}
+th, td {
+    text-align: center;
+    border-bottom: 2px solid lightslategrey;
+}
+
+/* 페이징  CSS처리 */
+.div_paging{
+    width: 100%;
+    height: 100px;
+    background-color: lightcyan;
+}
+.div_paging_a{
+    width: 300px;
+    height: 30px;
+    background-color: lightpink;
+    text-align: center;
+    padding-top: 20px;
+}
+.div_paging_a > a{
+    padding-left:7px
+}
+.div_paging_a > a:hover {
+    color: lightskyblue;
+    font-weight:bold;
+}
+ 
+/* 글쓰기 버튼처리 */
+.div_board_write{
+    width: 100px;
+    height: 50px;
+    background-color: limegreen;
+    position: relative;
+    left: 510px;
+    top: -30px;
+} 
+.div_board_write > input{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+/* 버튼클릭 액션 */
+.div_board_write > input:active{
+    transform:translate(2px,2px);
+}
+
+.contents, .content01, .content01_h1, #div_table, #div_table > table,
+     .div_paging, .div_paging_a, .div_board_write{
+    background-color: #fff;
+}
+
+.content01_h1 >h1{
+    margin-top: 100px;
+}
+#div_table{
+    margin-top: 50px;
+}
+
+.bgblock{
+    background-color: aqua;
+    margin-top: 50px;
+    width: 80%;
+    height: 500px;
+    background-image: url(../images/1:1.jpg);
+    background-size: 100% 100%;
+}
+
+.content01_h1 > h3{
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+
+

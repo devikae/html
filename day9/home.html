@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/header.css">
+    <link rel="stylesheet" type='text/css' href="./css/main.css">
+    <script>
+        window.onload = function () {
+
+            //alert("123");
+            let img_files = [
+                "./images/001.jpg",
+                "./images/002.jpg",
+                "./images/004.jpg",
+            ];
+            let div_img = document.getElementById("img_div");
+            let i = 0;
+            function fn_change_img() {
+                //alert("123123123");
+                console.log("i::::" + i);
+                div_img.style.backgroundImage = "url(" + img_files[i] + ")";
+                if (i == 2) {
+                    i = 0;
+                } else {
+                    i++
+                }
+                div_img.style.transitionDuration = "2s";
+
+            }
+
+            setInterval(function () {
+                fn_change_img();
+
+            }, 4000);
+
+            // 
+
+            let img_files01 = [
+                "./images/today/001.png",
+                "./images/today/002.png",
+                "./images/today/003.png",
+                "./images/today/004.png",
+                "./images/today/005.png",
+            ];
+
+            let service
+            let s1 = document.getElementById("shoe1");
+            let y = 0;
+            function fn_change_img01() {
+                //alert("123123123");
+                console.log("y::::" + y);
+                s1.style.backgroundImage = "url(" + img_files01[y] + ")";
+                if (y == 4) {
+                    y = 0;
+                } else {
+                    y++
+                }
+                s1.style.transitionDuration = "2s";
+
+            }
+
+            setInterval(function () {
+                fn_change_img01();
+
+            }, 4000);
+
+            let img_files02 = [
+                "./images/today/001-1.png",
+                "./images/today/002-1.png",
+                "./images/today/003-1.png",
+                "./images/today/004-1.png",
+                "./images/today/005-1.png",
+            ];
+
+            let service1
+            let s2 = document.getElementById("chart1");
+            let x = 0;
+            function fn_change_img02() {
+                //alert("123123123");
+                console.log("y::::" + y);
+                s2.style.backgroundImage = "url(" + img_files02[x] + ")";
+                if (x == 4) {
+                    x = 0;
+                } else {
+                    x++
+                }
+                s2.style.transitionDuration = "2s";
+
+            }
+
+            setInterval(function () {
+                fn_change_img02();
+
+            }, 4000);
+
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="logoArea"> <a href="./home.html">WEED KICKS</a>
+                <ul class="nav">
+                    <li><a href="./home.html">HOME</a></li>
+                    <li><a href="#">STYLE</a></li>
+                    <ul><a href="#">Market</a>
+                        <li><a href="#">SELL</a></li>
+                        <li><a href="#">BUY</a></li>
+                    </ul>
+                    <ul><a href="#">HELP</a>
+                        <li><a href="./map.html">MAP</a></li>
+                        <li><a href="./1:1List.html">1:1</a></li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="searchArea">
+                <form class="serach" action="">
+                    <input class="textsearch" type="text" id="input_search" name="input_search" value=""
+                        placeholder="Search">
+                    <span><a href="#">검색</a></span>
+                </form>
+            </div>
+        </div>
+
+
+
+
+        <div id="img_div" class="bg">
+        </div>
+
+
+
+
+
+        <div>
+            <ul class="body">
+                <li>
+                    <a href="https://stockx.com/air-jordan-1-low-fragment-design-x-travis-scott"><img
+                            src="./images/item/001.png" alt="이미지가 존재하지 않습니다."></a>
+                </li>
+                <li>
+                    <a href="https://stockx.com/air-jordan-1-retro-high-travis-scott"><img src="./images/item/002.png"
+                            alt="이미지가 존재하지 않습니다."></a>
+                </li>
+                <li>
+                    <a href="https://stockx.com/air-jordan-6-retro-travis-scott-british-khaki"><img
+                            src="./images/item/003.png" alt="이미지가 존재하지 않습니다."></a>
+                </li>
+                <li>
+                    <a href="https://stockx.com/nike-dunk-low-prm-halloween-2021"><img src="./images/item/004.png"
+                            alt="이미지가 존재하지 않습니다."></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="body">
+                <li>
+                    <a href="https://stockx.com/nike-air-force-1-07-qs-love-letter"><img src="./images/item/005.png"
+                            alt="이미지가 존재하지 않습니다."></a>
+                </li>
+                <li>
+                    <a href="https://stockx.com/air-jordan-1-retro-high-white-university-blue-black"><img
+                            src="./images/item/006.png" alt="이미지가 존재하지 않습니다."></a>
+                </li>
+                <li>
+                    <a href="https://stockx.com/nike-air-force-1-low-supreme-box-logo-white"><img
+                            src="./images/item/007.png" alt="이미지가 존재하지 않습니다."></a>
+                </li>
+                <li>
+                    <a href="https://stockx.com/nike-zoom-mmw-4-matthew-m-williams-grey"><img
+                            src="./images/item/008.png" alt="이미지가 존재하지 않습니다."></a>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="main_text1">
+            <h1 id="service">SERVICE</h1>
+            <div class="contents2">
+            </div>
+            <div class="service">
+                <div class="s1">
+                    <!-- <ul class="service01">
+                   <li> <img id ="service_img" src="./images/today/001.png" alt="이지미가 존재하지 않습니다.">
+                   </li>
+                   <li> <img id="service_img2" src="./images/005.png" alt="이지미가 존재하지 않습니다.">
+                   </li>
+                </ul> -->
+                    <div id="shoe1" class="today1"></div>
+                    <div id="chart1" class="today2"></div>
+                </div>
+
+
+
+                <div class="contents3">
+                    <h2>발매 정보</h2>
+                    <ul class="info">
+                        <li><a href="https://www.shoeprize.com/culture/2180/"><img src="./images/007.png"
+                                    alt="이지미가 존재하지 않습니다."></a>
+                            <h3>MSCHF x 타이가 '베이비 웨이비' 스니커가 발매된다</h3>
+                        </li>
+                        <li><a href="https://www.shoeprize.com/culture/2178/"><img src="./images/008.png"
+                                    alt="이지미가 존재하지 않습니다."></a>
+                            <h3>이태원의 새로운 편집숍, '애글릿' 들여다보기</h3>
+                        </li>
+                        <li><a href="https://www.shoeprize.com/culture/2182/"><img src="./images/009.png"
+                                    alt="이지미가 존재하지 않습니다."></a>
+                            <h3>에어 조던 4 '밀리터리 블랙'의 공식 출시 정보 확인하기</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer id="page_footer">
+
+            <div class="div_footer">
+                <div class="div_footer_log">
+                    <br>
+                    NextIT
+                </div>
+                <div class="div_footer_addr">
+                    Copyright © Next IT Edu-Center 2016
+                    <br>Tel : 042-719-8850 Fax : 042-719-8851 e-Mail : nextitcenter@gmail.com
+                    <br>(34856) (주)WEED KICKS
+                    <br>대전광역시 중구 계룡로 825 (용두동, 희영빌딩 2층)
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+</body>
+
+</html>

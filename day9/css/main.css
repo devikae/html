@@ -1,0 +1,119 @@
+.bg{
+    width: 80%;
+    height: 720px;
+    /* background-color: black; */
+    margin-top: 100px;
+    background-size: 80% 718px ;
+    display: flex;
+    background-size: cover;
+}
+
+.body{
+    display: flex;
+    margin-top: 100px;
+}
+
+.body >li{
+    width: 400px;
+    height: 250px;
+    background-color:darkgray
+}
+
+.main_text1{
+    margin-top: 200px;
+}
+.main_text1 > h1{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.service01{
+    display: flex;
+}
+
+.contents3{
+    text-align: center;
+    margin-top: 50px;
+}
+.contents3 > h2{
+    margin-bottom: 50px;
+}
+
+.contents3 > p {
+    width: 500px;
+}
+
+#page_footer{
+    background-color: rgb(215, 228, 228);
+    
+}
+
+.div_footer_addr{
+    color: rgb(10, 10, 10);
+}
+
+.info{
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.service01{
+    width: 70%;
+}
+
+.service01 > li{
+    width: 623px;
+    height: 597px;
+}
+
+.today1{
+    width: 600px;
+    height: 600px;
+    background-color: rgb(89, 94, 89);
+}
+.today2{
+    width: 600px;
+    height: 600px;
+    background-color: rgb(52, 53, 52);
+}
+
+.s1{
+    display: flex;
+    width: 70%;
+}
+
+.nav ul li{
+    display: none;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+.nav ul:hover li{
+    animation: fade-in .5s;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.bg{
+    background-image: url("../images/004.jpg") ;
+}
+
+.today1{
+    background-image: url(../images/today/005.png);
+}
+.today2{
+    background-image: url(../images/today/005-1.png);
+}
+
+.logoArea > a{
+    font-family: 'Lalezar', cursive;
+}

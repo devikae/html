@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<ht lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/1:1List.css">
+    <title>Document</title>
+    <script>
+        $(function(){
+    // jQuery 확인
+    // alert("345345");
+            $(".top_nav").load("./header.html");
+            $("#page_footer").load("./footer.html");
+        });
+        function fn_write(){
+            //alert("fn_write");
+            location.href="./1:1Write.html";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="logoArea"> <a href="./home.html">WEED KICKS</a>
+                <ul class="nav">
+                    <li><a href="./home.html">HOME</a></li>
+                    <li><a href="#">STYLE</a></li>
+                    <ul><a href="#">Market</a>
+                        <li><a href="#">SELL</a></li>
+                        <li><a href="#">BUY</a></li>
+                    </ul>
+                    <ul><a href="#">HELP</a>
+                        <li><a href="./map.html">MAP</a></li>
+                        <li><a href="./1:1List.html">1:1</a></li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="searchArea">
+                <form class="serach" action="">
+                    <input class="textsearch" type="text" id="input_search" name="input_search" value=""
+                        placeholder="Search">
+                    <span><a href="#">검색</a></span>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="bgblock">
+
+        </div>
+
+
+
+
+        <div class="contents">
+            <!-- 사용할 영역잡기 -->
+            <div class="content01">
+                
+                <div class="content01_h1">
+                    <h3>1:1 문의</h3>
+                </div>
+                <!-- 리스트 -->
+                <div id="div_table">
+                    <table>
+                        <colgroup>
+                            <col width="40">
+                            <col >
+                            <col width="180">
+                            <col width="300">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>제목</th>
+                                <th>작성자</th>
+                                <th>시간</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10</td>
+                                <td><a href="#"></a> test_01</td>
+                                <td>specialyw</td>
+                                <td>2021.09.13</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td><a href="#"></a> test_01</td>
+                                <td>specialyw</td>
+                                <td>2021.09.13</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><a href="#"></a> test_01</td>
+                                <td>specialyw</td>
+                                <td>2021.09.13</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><a href="#"></a> test_01</td>
+                                <td>specialyw</td>
+                                <td>2021.09.13</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td><a href="#"></a> test_01</td>
+                                <td>specialyw</td>
+                                <td>2021.09.13</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><a href="#"></a> test_01</td>
+                                <td>specialyw</td>
+                                <td>2021.09.13</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><a href="#"></a> test_01</td>
+                                <td>specialyw</td>
+                                <td>2021.09.13</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><a href="#"></a> test_01</td>
+                                <td>specialyw</td>
+                                <td>2021.09.13</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><a href="#"></a> test_01</td>
+                                <td>specialyw</td>
+                                <td>2021.09.13</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><a href="#"></a> test_01</td>
+                                <td>specialyw</td>
+                                <td>2021.09.13</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><a href="#"></a> test_01</td>
+                                <td>specialyw</td>
+                                <td>2021.09.13</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- paging -->
+                <div class="div_paging">
+                    <div class="div_paging_a">
+                        <a href="">&lt;&lt;</a>
+                        <a href="">1</a>
+                        <a href="">2</a>
+                        <a href="">3</a>
+                        <a href="">&gt;&gt;</a>
+                    </div>
+                    <div class="div_board_write">
+                        <input type="button" onclick=fn_write() value="글쓰기">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+         <!-- footer -->
+         <footer id="page_footer">
+            <!-- footer영역 -->
+        </footer>
+
+    </div>
+</body>
+
+</html>

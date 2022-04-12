@@ -1,0 +1,181 @@
+*{ 
+    margin: 0 auto;
+    /* margin:0 auto는 중앙정렬 해줌 */
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    /* vh는 높이 값이 100분 1단위 
+    ex) 브라우저 높이가 900px 라면 1vh = 9px*/
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.login_form{
+    position: relative;
+    top: 50%;
+    width: 400px;
+    background-color: darkolivegreen; 
+    /* 영역을 잘 확인하자 배경컬러를 줘서 */
+}
+
+.login_form > h1{
+    color: aliceblue;
+}
+
+.int-area{
+    width: 400px;
+    background-color: beige;
+}
+
+.int-area input{
+    width: 100%;
+    padding: 40px 10px 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+
+}
+
+.int-area input:focus{
+    outline: none;
+}
+
+.int-area > label{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.login_form label[for="mem_id"]{
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+
+.login_form label[for="mem_pw"]{
+    position: absolute;
+    top: 120px;
+    left: 10px;
+}
+
+.btn-area > button{
+    /* 아이디값이 있는데도 자손 선택 여러방법으로 선택 가능 */
+    width: 420px;
+    height: 50px;
+    color: darkolivegreen;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    background: whitesmoke;
+    margin-top: 30px;
+    padding: 0 10px 0;
+
+}
+
+.caption_ul > li{
+    list-style: none;
+    /* li 앞에 오는 .을 사라지게함  */
+    font-size: 20px ;
+}
+
+.caption_ul{
+    display: flex;
+    margin-top: 15px;
+}
+
+.caption a{
+    /* 후손태그 사용해서 선택하기 꼭 이렇게 하지 않아도 됨*/
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    /* 밑줄 없애기 */
+
+}
+
+body{
+    background: url(../imges/img1.jpg)
+    /* 배율 축소시 바둑판형식이 됨  이걸 고치기 위해 아래*/
+    no-repeat;
+    background-size: cover;
+    /* 늘이기 */
+}
+
+body, .login_form, .int-area{ 
+    /* and선택자  */
+    background-color: transparent;
+    /* 부모창의 컬러를 사용하겠다 */
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.int-area input[name="mem_id"]:focus + label {
+    top: 50px;
+    font-size: 13px;
+    color: #166cea;
+}
+.int-area input[name="mem_pw"]:focus + label {
+    top: 120px;
+    font-size: 13px;
+    color: #166cea;
+}
+
+.int-area label{
+    transition: all .5s ease;
+    /* transition: all은 top으로 이동될 때 모든옵션에 (all)에 대해서 애니메이션 효과를 발생
+    0.5초동안 ease효과 (천천히시작 빨라졌다 느려짐) */
+}
+
+.int-area input[name="mem_id"]:valid + label{
+    top:50px;
+    font-size: 13px;
+    color: #166cea;
+
+}
+
+.int-area input[name="mem_pw"]:valid + label{
+    top: 120px;
+    font-size: 13px;
+    color: #166cea;
+    
+}
+
+#btn_id:active{
+    /* 클릭 되었을때  */
+    color: rgb(66, 151, 177);
+}
+
+
+.caption_ul a:active{
+    color: rgb(66, 151, 177);
+}
+
+.int-area label.warning{
+    color: red;
+}
+
+.login_form{
+    position: fixed;
+    left: calc( 50% - 200px );
+    /* "-" 기점으로 양 옆 공백 있어야 적용가능 */
+}
+
+.int-area label.warning{
+    /* and조건 label.warning */
+    color: red;
+    animation-duration: .3s ease;
+}
+
+body{
+    background: url("../images/background.jpeg") no-repeat;
+    background-size: cover;
+    
+
+}
+
